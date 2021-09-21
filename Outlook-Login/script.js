@@ -9,7 +9,7 @@ const app = new Vue(
         el: "#app",
         data:
         {
-            schritt: 1,
+            step: 1,
             titel: "Login",
             inputType: "text",
             inputPlaceHolder: "Please enter your email address",
@@ -21,8 +21,8 @@ const app = new Vue(
         {
             next: function(event)
             {
-                // E-Mail-Adresse Eingabeschritt
-                if(this.schritt == 1)
+                // E-Mail-Adresse Enter Process
+                if(this.step == 1)
                 {
                     if(this.input == "")
                     {
@@ -31,39 +31,39 @@ const app = new Vue(
                     }
 
 
-                    this.titel = "Passwort";
+                    this.titel = "Password";
                     this.inputType = "password";
-                    this.inputPlaceHolder = "Passwort eingeben";
-                    this.btnText = "Anmelden";
+                    this.inputPlaceHolder = "Enter your password";
+                    this.btnText = "Login";
 
-                    // Sachen speichern
+                    // Save
                     eMail = this.input;
 
-                    // zum Passwort Schritt
-                    this.schritt++;
-                    this.hinweis = "";
+                    // to Password step
+                    this.step++;
+                    this.clue = "";
                     this.input = "";
                 }
-                else if(this.schritt == 2)
+                else if(this.step == 2)
                 {
                     if(this.input == "")
                     {
-                        this.hinweis = "Bitte Passwort eingeben.";
+                        this.clue = "Please enter your password";
                         return;
                     }
 
                     pass = this.input;
 
-                    // anmelden
+                    // login
 
-                    if(eMail == richtigeMail && pass == richtigesPass)
+                    if(eMail == correctMail && pass == correctPass)
                     {
-                        alert("SIE HABEN SICH ERFOLGREICH ANGEMELDET!");
-                        this.hinweis = "";
+                        alert("YOU HAVE SUCCESSFULLY LOGGED IN!");
+                        this.clue = "";
                     }
                     else
                     {
-                        this.hinweis = "Falsche Daten eingegeben.";
+                        this.clue = "Wrong password, please enter your password again!";
                     }
                 }
             }
