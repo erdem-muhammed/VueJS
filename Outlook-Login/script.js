@@ -1,8 +1,8 @@
 let eMail = "";
 let pass = "";
 
-const richtigeMail = "email@domain3.com";
-const richtigesPass = "halloWelt";
+const correctMail = "erdem@outlook.com";
+const correctPass = "developer";
 
 const app = new Vue(
     {
@@ -10,16 +10,16 @@ const app = new Vue(
         data:
         {
             schritt: 1,
-            titel: "Anmelden",
+            titel: "Login",
             inputType: "text",
-            inputPlaceHolder: "E-Mail-Adresse eingeben",
-            btnText: "Weiter",
+            inputPlaceHolder: "Please enter your email address",
+            btnText: "Next",
             input: "",
-            hinweis: "",
+            clue: "",
         },
         methods:
         {
-            weiter: function(event)
+            next: function(event)
             {
                 // E-Mail-Adresse Eingabeschritt
                 if(this.schritt == 1)
