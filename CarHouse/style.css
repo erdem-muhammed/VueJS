@@ -8,4 +8,53 @@ body
 {
     margin: 0;
     font-family: 'Montserrat';
+    height: 100vh;
+}
+.wrapper
+{
+    margin: 0 auto;
+    width: 1200px;
+    margin-top: 40px;
+}
+#app
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#inputs
+{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+#inputs input
+{
+    padding: 8px 12px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+#inputs button
+{
+    padding: 12px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    margin-top: 10px;
+    transition: hover 0.3s;
+    background-color: white;
+}
+#inputs button:hover
+{
+    background-color: black;
+    color: white;
+}
+.ads
+{
+    width: 900px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
