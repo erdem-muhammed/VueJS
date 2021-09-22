@@ -13,12 +13,12 @@
     <div id="app">
         <div id="inputs">
             <input type="file">
-            <input type="text" placeholder="Titel">
-            <input type="text" placeholder="Subtitel">
-            <input type="text" placeholder="Fuel">
-            <input type="text" placeholder="Engine Power">
-            <input type="text" placeholder="Kilometer">
-            <input type="text" placeholder="Year">
+            <input type="text" placeholder="Titel" v-model="in_titel">
+            <input type="text" placeholder="Subtitel" v-model="in_subtitel">
+            <input type="text" placeholder="Fuel" v-model="in_fuel">
+            <input type="text" placeholder="Engine Power" v-model="in_enginePower">
+            <input type="text" placeholder="Kilometer" v-model="in_kilometer">
+            <input type="text" placeholder="Year" v-model="in_year">
             <button @click="add"><b>ADD</b></button>
         </div>
 
