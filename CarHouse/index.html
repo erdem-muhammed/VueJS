@@ -26,16 +26,16 @@
             <div class="card" v-for="car in cars">
                 <img src="auto.jpg">
                 <div class="info">
-                    <span class="titel">asdasdas</span>
-                    <span class="subtitel">asdasdasd</span>
+                    <span class="titel">{{ car.titel }}</span>
+                    <span class="subtitel">{{ car.subtitel }}</span>
                     <div class="feature">
                         <div>
-                           <span>Fuel</span>
-                           <span>Engine Power</span>
+                           <span>{{ car.fuel }}</span>
+                           <span>{{ car.enginePower }}</span>
                         </div>
                         <div>
-                            <span>Kilometer</span>
-                            <span>Year</span>
+                            <span>{{ car.kilometer }}</span>
+                            <span>{{ car.year }}</span>
                         </div>
                     </div>
                 </div>
