@@ -57,4 +57,49 @@ body
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    height: 10px;
+    background-color: teal;
+}
+.ads .card
+{
+    width: 240px;
+    border: 1px solid #aaa;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.card>img
+{
+    width: 100%;
+}
+.card .info
+{
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.info .titel
+{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.info .subtitel
+{
+    color: rgb(94, 94, 94);
+    margin-bottom: 10px;
+}
+
+.feature>div:first-child
+{
+    margin-bottom: 8px;
+}
+.feature span
+{
+    background-color: rgb(231, 231, 231);
+    color:rgb(73, 73, 73);
+    font-size: 0.9em;
+    border-radius: 3px;
+    padding: 4px 8px;
+    display: inline-block;
+    margin: 0 5px;
 }
