@@ -67,6 +67,7 @@ body
     margin: 20px 20px;
     display: flex;
     flex-direction: column;
+    border-radius: 4px;
 }
 .card>img
 {
