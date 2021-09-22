@@ -19,14 +19,14 @@
             <input type="text" placeholder="Engine Power">
             <input type="text" placeholder="Kilometer">
             <input type="text" placeholder="Year">
-            <button><b>ADD</b></button>
+            <button @click="add"><b>ADD</b></button>
         </div>
 
         <div class="ads">
-            <div class="card">
+            <div class="card" v-for="car in cars">
                 <img src="auto.jpg">
                 <div class="info">
-                    <span class="titel">asdasd</span>
+                    <span class="titel">asdasdas</span>
                     <span class="subtitel">asdasdasd</span>
                     <div class="feature">
                         <div>
