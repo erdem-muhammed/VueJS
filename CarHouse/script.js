@@ -16,7 +16,20 @@ const app = new Vue(
         },
         methods:
         {
-            
+            add: function()
+            {
+                this.cars.push(
+                        {  
+                            image: "auto.jpg",
+                            titel: this.in_titel,
+                            subtitel: this.in_subtitel,
+                            fuel: this.in_fuel,
+                            enginePower: this.in_enginePower,
+                            kilometer: this.in_kilometer,
+                            year: this.in_year
+                    }
+                )
+            }
         }
     }
 )
