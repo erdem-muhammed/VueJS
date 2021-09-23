@@ -1,3 +1,6 @@
+
+
+
 const app = new Vue(
     {
         el: "#app",
@@ -40,6 +43,11 @@ const app = new Vue(
     }
 )
 
+
+function comma(n)
+{
+    return (Math.round(n * 100) / 100).toLocaleString() + " €";
+}
 
 
 //Buy function part with Javascript

@@ -34,7 +34,6 @@
             <h1>BESTSELLER</h1>
 
            <div class="products" id="app">
-           
             <div class="card" v-for="p in products">
                    <span><b>{{ p.titel }}</b></span>
                    <div class="image">
@@ -42,7 +41,7 @@
                    </div>
                    <div class="info">
                        <div class="left">
-                           {{ p.price }}
+                           {{ comma(p.price) }}
                        </div>
                        <div class="right">
                            <button>ADD</button>
