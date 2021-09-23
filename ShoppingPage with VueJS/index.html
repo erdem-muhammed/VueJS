@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Page</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    
+    <header>
+        <div class="Title box">
+            <div><b>My Website</b></div>
+        </div>
+       <nav>
+           <div class="container box">
+            <ul>
+            <li><a href="">HOME</a></li>
+            <li class="selected"><a href="">SHOP</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">CONTACT</a></li>
+            </ul>
+            <span class="Credit" id="credit">
+            Credit:   <b>4500 €</b>
+            </span>
+           </div>
+       </nav>
+    </header>
+       <main>
+        <div class="mainBox box">  
+          <div class="bigBox">
+            <h1>BESTSELLER</h1>
+
+           <div class="products">
+           
+            <div class="card">
+                   <span><b>Iphone X</b></span>
+                   <div class="image">
+                       <img src="iphone.jpg" >
+                   </div>
+                   <div class="info">
+                       <div class="left">
+                           320, €
+                       </div>
+                       <div class="right">
+                           <button onclick="add('Iphone X', 320);">ADD</button>
+                       </div>
+                   </div>
+            </div>
+        
+           
+           
+           
+           
+           </div>
+        </div>
+        
+        <aside>
+            <h3>Shopping Cart</h3>
+            <div id="shoppingcart">
+
+            </div>
+            <div class="total" id="totalCost">
+                Total:
+            </div>
+            <button onclick="buy();">BUY</button>
+            <div id="notification">
+
+            </div>
+        </aside>
+          
+        </div>
+   
+       </main>
+      
+<script src="./script.js"></script>
+</body>
+</html>
