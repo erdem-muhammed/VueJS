@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Page</title>
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">  
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>  
 </head>
 <body>
     
@@ -32,27 +33,22 @@
           <div class="bigBox">
             <h1>BESTSELLER</h1>
 
-           <div class="products">
+           <div class="products" id="app">
            
-            <div class="card">
-                   <span><b>Iphone X</b></span>
+            <div class="card" v-for="p in products">
+                   <span><b>{{ p.titel }}</b></span>
                    <div class="image">
-                       <img src="iphone.jpg" >
+                       <img :src="p.image" >
                    </div>
                    <div class="info">
                        <div class="left">
-                           320, €
+                           {{ p.price }}
                        </div>
                        <div class="right">
-                           <button onclick="add('Iphone X', 320);">ADD</button>
+                           <button>ADD</button>
                        </div>
                    </div>
             </div>
-        
-           
-           
-           
-           
            </div>
         </div>
         
@@ -74,6 +70,6 @@
    
        </main>
       
-<script src="./script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
