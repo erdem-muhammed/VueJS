@@ -101,4 +101,4 @@ function buy()
     notification.style.backgroundColor = "red";
 
     }
-}
+}*/
