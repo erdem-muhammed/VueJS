@@ -67,8 +67,7 @@ button
 .wrapper
 {
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -158,4 +157,5 @@ header
     border-bottom-left-radius: var(--radius);
     border-bottom-right-radius: var(--radius);
 }
+
 

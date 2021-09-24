@@ -35,85 +35,21 @@
         </div>
     </div>
 </section>
-<section class="content">
+<section class="content" id="blogApp">
     <div class="wrapper flex">
-        <div class="card">
+        <div class="card" v-for="p in article">
             <h4 class="title">
-                How can be a Web-Developer??
+                {{ p.title }}
             </h4>
             <p class="info">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            </div>
-
-        <div class="card">
-            <h4 class="title">
-                How can be a Web-Developer??
-            </h4>
-            <p class="info">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </div>
-        <div class="card">
-            <h4 class="title">
-                How can be a Web-Developer??
-            </h4>
-            <p class="info">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </div>
-        <div class="card">
-            <h4 class="title">
-                How can be a Web-Developer??
-            </h4>
-            <p class="info">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </div>
-        <div class="card">
-            <h4 class="title">
-                How can be a Web-Developer??
-            </h4>
-            <p class="info">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </div>
-        <div class="card">
-            <h4 class="title">
-                How can be a Web-Developer??
-            </h4>
-            <p class="info">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </div>
-        <div class="card">
-            <h4 class="title">
-                How can be a Web-Developer??
-            </h4>
-            <p class="info">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </div>
-        <div class="card">
-            <h4 class="title">
-                How can be a Web-Developer??
-            </h4>
-            <p class="info">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-        </div>
-        <div class="card">
-            <h4 class="title">
-                How can be a Web-Developer??
-            </h4>
-            <p class="info">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                {{ (p.content).substr(0, 110) + "..."  }}
             </p>
         </div>
     </div>
 </section>
 
 <footer></footer>
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
