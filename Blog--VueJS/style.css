@@ -55,3 +55,29 @@ button
     padding-left: 15px;
     padding-right: 15px;
 }
+
+/*------Individual Style---------*/
+header
+{
+    background-color: var(--dark);
+    color: white;
+    padding: 20px 0;
+}
+.header-top
+{
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-top .logo
+{
+    font-size: 1.2em;
+}
+.header-top .Menu a
+{
+    color: white;
+    font-weight: 400;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
