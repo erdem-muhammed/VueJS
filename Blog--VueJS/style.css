@@ -15,7 +15,6 @@ body
     --primary: #007bff;
     --secondary: #5a6670;
     --hover: #126ccc;
-
     --radius: 6px;
 }
 a
@@ -73,7 +72,12 @@ button
     padding-left: 15px;
     padding-right: 15px;
 }
-
+.flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 /*------Individual Style---------*/
 
 
@@ -108,13 +112,50 @@ header
 {
     text-align: center;
     height: 40vh;
+    margin-bottom: 100px;
 }
 .subText
 {
     width: 400px;
-    margin: 0 auto 20px auto;
+    margin: 40px auto 30px auto;
 }
-#btn_primary
+/*----------CONTENT----------*/
+.content
 {
-
+    background-color: rgb(240, 245, 250);
+    padding-top: 50px;
 }
+.content .card
+{
+    width: 280px;
+    border-radius: var(--radius);
+    border: 1px solid #e1e7f0;
+    box-shadow: 0px 1px 10px -1px rgb(28 33 38 / 16%);
+    margin-bottom: 40px;
+}
+.card .title
+{ 
+    padding: 30px;
+    height: 180px;
+    background-color: var(--dark);
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+.card .info
+{
+    padding: 20px;
+    height: 120px;
+    overflow: hidden;
+    background-color: white;
+    margin: 0;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
