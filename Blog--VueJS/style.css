@@ -158,4 +158,29 @@ header
     border-bottom-right-radius: var(--radius);
 }
 
+/*------- RESPONSIVE -------- */
+
+@media (max-width: 1024px)
+{
+    .wrapper
+    {
+        max-width: 740px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .wrapper
+    {
+        max-width: 460px;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .wrapper
+    {
+        max-width: 100%;
+    }
+}
 
