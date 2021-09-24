@@ -6,7 +6,7 @@
 body
 {
     margin: 0;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
 }
 /*---------GENERAL STYLE-------*/
 :root
@@ -47,6 +47,24 @@ button
     padding: 12px 30px;
     border-radius: var(--radius);
 }
+.btn-primary
+{
+    background-color: var(--primary);
+    color: white;
+}
+.btn-primary:hover
+{
+    background-color: var(--hover);
+}
+.btn-secondary
+{
+    background-color: var(--secondary);
+    color: white;
+}
+.btn-secondary:hover
+{
+    background-color: var(--dark);
+}
 .wrapper
 {
     max-width: 1000px;
@@ -57,6 +75,9 @@ button
 }
 
 /*------Individual Style---------*/
+
+
+/*---------HEADER-TOP----------*/
 header
 {
     background-color: var(--dark);
@@ -80,4 +101,20 @@ header
     font-weight: 400;
     margin-right: 10px;
     font-size: 1.2em;
+}
+
+/*------------WELCOME------------*/
+.Welcome
+{
+    text-align: center;
+    height: 40vh;
+}
+.subText
+{
+    width: 400px;
+    margin: 0 auto 20px auto;
+}
+#btn_primary
+{
+
 }
