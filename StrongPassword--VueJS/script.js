@@ -15,3 +15,13 @@ const color =
     "rgb(74, 197, 2)",
     "rgb(2, 109, 197)"
 ]
+
+
+const app = new Vue(
+    {
+        el: '#app',
+        data: {
+            
+        }
+    }
+)
