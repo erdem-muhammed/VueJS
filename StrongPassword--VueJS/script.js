@@ -1,4 +1,4 @@
-let pass_s = 0;
+let pass_s = 0; //pass step
 const text =
 [
     "",
@@ -21,6 +21,28 @@ const app = new Vue(
     {
         el: '#app',
         data: {
+            warning: "",
+            password: "",
+            color: "color: " + color[0]
+        },
+        methods: {
+            passCheck: function(
+                {
+                    pass_s = 0;
+                     //includes small letter
+                    if(this.password.match(/[a-z]/))
+                    {
+                        pass_s++;
+                    }
+                    //includes number
+                    if(this.password.match(/[0-9]/))
+                    {
+                        pass_s++;
+                    }
+
+                }
+            )
+            
             
         }
     }

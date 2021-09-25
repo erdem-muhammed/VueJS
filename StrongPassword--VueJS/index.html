@@ -10,10 +10,10 @@
 </head>
 <body>
     <div id="app">
-        <input type="text" placeholder="Username">
-        <input type="text" placeholder="Password">
-        <div class="warning">
-            Password weak/ok/strong
+        <input v-focus type="text" placeholder="Username">
+        <input @input="passCheck" type="text" placeholder="Password" v-model="password">
+        <div class="warning" :style="color">
+            {{ text }}
         </div>
         <button>Register</button>
     </div>
