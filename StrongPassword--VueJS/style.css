@@ -1,0 +1,27 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#app
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+#app input
+{
+    padding: 12px 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 10px;
+}
