@@ -13,7 +13,7 @@
         <input v-focus type="text" placeholder="Username">
         <input @input="passCheck" type="text" placeholder="Password" v-model="password">
         <div class="warning" :style="color">
-            {{ text }}
+            {{ warning }}
         </div>
         <button>Register</button>
     </div>
