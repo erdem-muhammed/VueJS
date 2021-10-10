@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="app">
-        <input v-focus type="text" placeholder="Username">
+        <input type="text" placeholder="Username" id="focusing">
         <input @input="passCheck" type="text" placeholder="Password" v-model="password">
         <div class="warning" :style="color">
             {{ warning }}

@@ -16,6 +16,7 @@ const color =
     "rgb(2, 109, 197)"
 ]
 
+const focusInput = document.getElementById("focusing");
 
 const app = new Vue(
     {
