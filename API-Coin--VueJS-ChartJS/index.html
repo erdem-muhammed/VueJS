@@ -13,7 +13,7 @@
     <div id="app">
         <h4>Please select a currency</h4>
         <div class="btnCon">
-            <button v-for="btn in buttons">currency</button>
+            <button v-for="btn in buttons" @click="btnClick(i)">currency</button>
         </div>
 
         <div>{{ Result }}</div>
