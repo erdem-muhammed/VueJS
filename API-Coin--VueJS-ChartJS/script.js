@@ -29,7 +29,7 @@ const app = new Vue({
     el:"#app",
     data:
     {
-        buttons[],
+        buttons: [],
         result: ""
     },
     created()
@@ -68,7 +68,7 @@ const app = new Vue({
                 {
                     const date = new Date(json.data.history[i].timestamp)
                     labels.push(date.getDate() + "." + (date.getMonth()+1) + "." + date.getFullYear());
-                    grafikData.datasets[0].data.push(json.data.history[i].price);
+                    graphicData.datasets[0].data.push(json.data.history[i].price);
                 }
 
                 new Chart(
