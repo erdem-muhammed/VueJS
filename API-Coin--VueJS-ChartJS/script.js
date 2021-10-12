@@ -1,13 +1,28 @@
-const { vuePlugin } = require("highlight.js");
+// copy-paste from Chart.js website
+let labels =
+[
+];
 
+let graphicData =
+{
+    labels: labels,
+    datasets:
+    [
+        {
+            label: 'Bitcoin-Currency',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [],
+        },
+    ]
+};
 
-
-
-
-
-
-
-
+const config =
+{
+    type: 'line',
+    data: graphicData,
+    options: {}
+};
 
 
 const app = new Vue({
@@ -28,6 +43,8 @@ const app = new Vue({
             }
         })
         .then(response => response.json())
-        .then(json => antwortGekommen(json))
+        .then(json => answer(json))
     },
+    methods:
+    {}
 })
