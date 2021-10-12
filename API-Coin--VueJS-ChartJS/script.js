@@ -43,7 +43,7 @@ const app = new Vue({
             }
         })
         .then(response => response.json())
-        .then(json => answer(json))
+        .then(json => answerTaken(json))
     },
     methods:
     {
@@ -59,7 +59,7 @@ const app = new Vue({
                     "x-rapidapi-key": "f464c0068amsh83cba0ecdfd1549p1171b8jsn78f7366baa2b"
                 }
             })
-            .then(answer => antwort.json())
+            .then(answer => answer.json())
             .then(function(json)
             {
                 graphicData.datasets[0].label = app.buttons[index].name + "-Currency";
@@ -79,3 +79,16 @@ const app = new Vue({
         }
     }
 })
+
+function answerTaken(object)
+{
+    let list = object.data.coins;
+
+    for(let i = 0; i < 10; i++)
+    {
+        app.buttons.push({
+            name: list[i].name,
+            id: list[i].id
+        })
+    }
+}
