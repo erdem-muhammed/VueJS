@@ -11,7 +11,8 @@
 </head>
 <body>
 <div id="app" class="flex">
-        <h1 style="margin: 0 auto; margin-bottom: 30px;">Login</h1>
+        <h1 style="margin: 0 auto; margin-bottom: 30px;">{{ headline }}</h1>
+    <template v-if="step == 1">
     <div>
       <div class="margin">Username</div>
       <div class="inputBox margin">
@@ -33,9 +34,11 @@
         <a href="#">Create an account?</a>
       </div>
 
+    </template>
 
 
-   <template>
+
+   <template v-if="step == 2">
     <table>
         <tr>
             <th>Name</th>

@@ -1,5 +1,3 @@
-const { default: Vue } = require("vue");
-
 const users =
 [
     {
@@ -90,7 +88,10 @@ const app = new Vue(
         el: "#app",
         data:
         {
-            userlist: users;
+            step: 1,
+            headline: "Login",
+            
+            userlist: users
         }
     }
 )
