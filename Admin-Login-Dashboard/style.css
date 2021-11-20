@@ -88,3 +88,8 @@ table
     margin: 30px auto;
     text-align: left;
 }
+table th
+{
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+}
