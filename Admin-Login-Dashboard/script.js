@@ -97,7 +97,7 @@ const app = new Vue(
             warning: "",
             userlist: users
         },
-        method: 
+        methods: 
         {
             login: function()
             {
