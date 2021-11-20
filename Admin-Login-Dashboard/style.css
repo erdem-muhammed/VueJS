@@ -9,9 +9,9 @@ body
 }
 :root
 {
-    --primary: #1ca3ea;
-    --textColor: #37424c;
-    --secondary: #8fa4b7;
+    --primaryBtn: #1ca3ea;
+    --text: #37424c;
+    --placeholder: #8fa4b7;
 
     --radius: 8px;
 }
