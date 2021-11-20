@@ -6,6 +6,7 @@ body
 {
     margin: 0;
     font-family: "Montserrat";
+    height: 100vh;
 }
 :root
 {
@@ -14,4 +15,7 @@ body
     --placeholder: #8fa4b7;
 
     --radius: 8px;
+}
+#app
+{
 }
