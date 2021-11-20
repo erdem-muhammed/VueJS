@@ -79,3 +79,6 @@ const users =
 		alter: 42
     },
 ]
+
+const user_name = "admin";
+const user_pass = "admin123456";
