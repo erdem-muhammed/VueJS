@@ -30,6 +30,12 @@ body
 {
     margin-bottom: 12px;
 }
+#notification, #warning
+{
+    color: rgb(255, 62, 62);
+    font-size: 0.9em;
+    height: 10px;
+}
 #app
 {
     width: 500px;

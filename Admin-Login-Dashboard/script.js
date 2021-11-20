@@ -123,6 +123,10 @@ const app = new Vue(
                     app.warning = "Username or password is incorrect!";
                 }
                
+            },
+            toLogin: function()
+            {
+                step--;
             }
         }
     }

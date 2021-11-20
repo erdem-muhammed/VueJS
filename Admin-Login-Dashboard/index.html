@@ -15,23 +15,29 @@
     <template v-if="step == 1">
     <div>
       <div class="margin">Username</div>
-      <div class="inputBox margin">
+      <div class="inputBox">
         <i class="far fa-user"></i>
         <input type="text" placeholder="Enter username" v-model="name_input">
-        <div id="notification">{{ user_notify }}</div>
       </div>
+      <div id="notification" class="margin">{{ user_notify }}</div>
     </div>
     <div>
         <div class="margin">Password</div>
-        <div class="inputBox margin">
+
+        <div class="inputBox">
           <i class="fal fa-lock-alt"></i>
           <input type="password" placeholder="Enter password" v-model="pass_input">
-          <div id="notification">{{ pass_notify }}</div>
         </div>
+
+        <div id="notification" class="margin">{{ pass_notify }}</div>
+
       </div>
         <dıv class="margin" style="text-align: end;">Forgot Password?</dıv>
+
         <button  @click="login" class="margin" id="loginBtn">Login</button>
-        <div>{{ warning }}</div>
+
+        <div id="warning">{{ warning }}</div>
+
       <div class="flex newAccount">
         <span class="margin">Don't you have an account?</span>
         <a href="#">Create an account?</a>
@@ -54,7 +60,7 @@
             <td>{{ u.age }}</td>
         </tr>
     </table>
-    <a href="" id="logOut">Log out</a>
+    <a href="" id="logOut" @click="toLogin">Log out</a>
    </template>
  </div>
 
