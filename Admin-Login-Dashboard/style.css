@@ -54,7 +54,7 @@ body
 }
 #loginBtn
 {
-    padding: 10px 12px;
+    padding: 10px 0;
     background-color: var(--primaryBtn);
     color: white;
     cursor: pointer;
@@ -67,4 +67,17 @@ body
 #loginBtn:hover
 {
     background-color: var(--btnHover)
+}
+.newAccount
+{
+    text-align: center;
+    margin-top: 30px;
+}
+.newAccount a
+{
+    color: var(--primaryBtn);
+}
+.newAccount a:hover
+{
+    text-decoration: none;
 }
