@@ -92,6 +92,8 @@ const app = new Vue(
             headline: "Login",
             name_input: "",
             pass_input: "",
+            user_notify: "",
+            pass_notify: "",
             userlist: users
         },
         method: 
@@ -100,7 +102,11 @@ const app = new Vue(
             {
                 username = this.name_input;
                 pass = this.pass_input;
-             
+                if(username == "")
+                {
+                    app.user_notify = "Please enter username!";
+                    return;
+                }
             }
         }
     }
