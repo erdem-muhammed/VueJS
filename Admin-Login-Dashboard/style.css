@@ -7,6 +7,11 @@ body
     margin: 0;
     font-family: "Montserrat";
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(88,101,185);
+    background: linear-gradient(90deg, rgba(88,101,185,1) 0%, rgba(28,145,226,1) 26%, rgba(34,220,253,1) 66%);
 }
 :root
 {
@@ -18,4 +23,10 @@ body
 }
 #app
 {
+    height: 90%;
+    background-color: white;
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.09);
+    padding: 10%;
 }
