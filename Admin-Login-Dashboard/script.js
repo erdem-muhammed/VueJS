@@ -110,6 +110,12 @@ const app = new Vue(
                 if(pass == "")
                 {
                     app.pass_notify = "Please enter password!";
+                    return;
+                }
+                if(username == user_name && pass == user_pass)
+                {
+                    app.headline = "Dashboard";
+                    app.step++;
                 }
             }
         }
