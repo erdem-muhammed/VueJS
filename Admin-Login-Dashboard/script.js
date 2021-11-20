@@ -94,11 +94,12 @@ const app = new Vue(
             pass_input: "",
             user_notify: "",
             pass_notify: "",
+            warning: "",
             userlist: users
         },
         method: 
         {
-            login()
+            login: function()
             {
                 username = this.name_input;
                 pass = this.pass_input;
@@ -117,6 +118,11 @@ const app = new Vue(
                     app.headline = "Dashboard";
                     app.step++;
                 }
+                else
+                {
+                    
+                }
+               
             }
         }
     }
