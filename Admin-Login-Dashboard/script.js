@@ -94,9 +94,14 @@ const app = new Vue(
             pass_input: "",
             userlist: users
         },
-        method: login()
+        method: 
         {
-            
+            login()
+            {
+                username = this.name_input;
+                pass = this.pass_input;
+             
+            }
         }
     }
 )
