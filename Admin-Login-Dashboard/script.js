@@ -1,3 +1,5 @@
+const { default: Vue } = require("vue");
+
 const users =
 [
     {
@@ -82,3 +84,13 @@ const users =
 
 const user_name = "admin";
 const user_pass = "admin123456";
+
+const app = new Vue(
+    {
+        el: "#app",
+        data:
+        {
+            userlist: users;
+        }
+    }
+)
