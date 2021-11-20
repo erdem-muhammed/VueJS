@@ -90,8 +90,13 @@ const app = new Vue(
         {
             step: 1,
             headline: "Login",
-            
+            name_input: "",
+            pass_input: "",
             userlist: users
+        },
+        method: login()
+        {
+            
         }
     }
 )
