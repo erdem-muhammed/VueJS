@@ -107,6 +107,10 @@ const app = new Vue(
                     app.user_notify = "Please enter username!";
                     return;
                 }
+                if(pass == "")
+                {
+                    app.pass_notify = "Please enter password!";
+                }
             }
         }
     }

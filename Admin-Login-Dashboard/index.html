@@ -18,6 +18,7 @@
       <div class="inputBox margin">
         <i class="far fa-user"></i>
         <input type="text" placeholder="Enter username" v-model="name_input">
+        <div id="notification">{{ user_notify }}</div>
       </div>
     </div>
     <div>
@@ -25,10 +26,11 @@
         <div class="inputBox margin">
           <i class="fal fa-lock-alt"></i>
           <input type="text" placeholder="Enter password" v-model="pass_input">
+          <div id="notification">{{ pass_notify }}</div>
         </div>
       </div>
         <dıv class="margin" style="text-align: end;">Forgot Password?</dıv>
-        <button class="margin" id="loginBtn" @click="login">Login</button>
+        <button class="margin" id="loginBtn" @click="login()">Login</button>
       <div class="flex newAccount">
         <span class="margin">Don't you have an account?</span>
         <a href="#">Create an account?</a>
