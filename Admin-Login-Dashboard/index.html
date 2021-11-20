@@ -41,17 +41,17 @@
 
 
 
-   <template v-if="step == 2">
+   <template v-else-if="step == 2">
     <table>
         <tr>
             <th>Name</th>
             <th>Surname</th>
             <th>Age</th>
         </tr>
-        <tr>
-            <td>NAME</td>
-            <td>SURNAME</td>
-            <td>AGE</td>
+        <tr v-for="u in userlist">
+            <td>{{ u.name }}</td>
+            <td>{{ u.surname }}</td>
+            <td>{{ u.age }}</td>
         </tr>
         <a href="" id="logOut">Log out</a>
     </table>

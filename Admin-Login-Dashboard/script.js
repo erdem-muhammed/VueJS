@@ -2,81 +2,81 @@ const users =
 [
     {
         id: 0,
-        vorname: "Max",
-        nachname: "Mustermann",
-		alter: 25
+        name: "Max",
+        surname: "Mustermann",
+		age: 25
     },
     {
         id: 1,
-        vorname: "Lucas",
-        nachname: "Müller",
-		alter: 38
+        name: "Lucas",
+        surname: "Müller",
+		age: 38
     },
     {
         id: 2,
-        vorname: "Laura",
-        nachname: "Musterfrau",
-		alter: 30
+        name: "Laura",
+        surname: "Musterfrau",
+		age: 30
     },
     {
         id: 3,
-        vorname: "Emma",
-        nachname: "Jäger",
-		alter: 26
+        name: "Emma",
+        surname: "Jäger",
+		age: 26
     },
     {
         id: 4,
-        vorname: "Anton",
-        nachname: "Schneider",
-		alter: 40
+        name: "Anton",
+        surname: "Schneider",
+		age: 40
     },
     {
         id: 5,
-        vorname: "Martin",
-        nachname: "Schmidt",
-		alter: 38
+        name: "Martin",
+        surname: "Schmidt",
+		age: 38
     },
     {
         id: 6,
-        vorname: "Jena",
-        nachname: "Fischer",
+        name: "Jena",
+        surname: "Fischer",
 		alter: 21
     },
     {
         id: 7,
-        vorname: "Alex",
-        nachname: "Weber",
-		alter: 34
+        name: "Alex",
+        surname: "Weber",
+		age: 34
     },
     {
         id: 8,
-        vorname: "Karl",
-        nachname: "Meyer",
-		alter: 51
+        name: "Karl",
+        surname: "Meyer",
+		age: 51
     },
     {
         id: 9,
-        vorname: "Marcus",
-        nachname: "Wagner",
-		alter: 29
+        name: "Marcus",
+        surname: "Wagner",
+		age: 29
     },
     {
         id: 10,
-        vorname: "Helen",
-        nachname: "Becker",
-		alter: 22
+        name: "Helen",
+        surname: "Becker",
+		age: 22
     },
     {
         id: 11,
-        vorname: "Lina",
-        nachname: "Schulz",
-		alter: 19
+        name: "Lina",
+        surname: "Schulz",
+		age: 19
     },
     {
         id: 12,
-        vorname: "Peter",
-        nachname: "Hoffmann",
-		alter: 42
+        name: "Peter",
+        surname: "Hoffmann",
+		age: 42
     },
 ]
 
@@ -120,7 +120,7 @@ const app = new Vue(
                 }
                 else
                 {
-                    
+                    app.warning = "Username or password is incorrect!";
                 }
                
             }
