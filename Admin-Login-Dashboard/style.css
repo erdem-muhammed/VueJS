@@ -16,9 +16,9 @@ body
 :root
 {
     --primaryBtn: #1ca3ea;
+    --btnHover: #3d95c4;
     --text: #37424c;
     --placeholder: #8fa4b7;
-
     --radius: 8px;
 }
 .flex
@@ -51,4 +51,20 @@ body
     outline: none;
     width: 100%;
     margin-left: 10px;
+}
+#loginBtn
+{
+    padding: 10px 12px;
+    background-color: var(--primaryBtn);
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1.05em;
+    margin-top: 20px;
+}
+#loginBtn:hover
+{
+    background-color: var(--btnHover)
 }
