@@ -26,17 +26,22 @@ body
     display: flex;
     flex-direction: column;
 }
+.margin
+{
+    margin-bottom: 12px;
+}
 #app
 {
+    width: 450px;
     height: 90%;
     background-color: white;
-    width: 500px;
     border-radius: 8px;
     box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.09);
-    padding: 10%;
+    padding: 5%;
 }
 #app input
 {
     border: none;
     border-bottom: 1px solid #aaa;
+    width: 100%;
 }
