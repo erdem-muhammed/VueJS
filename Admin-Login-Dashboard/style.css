@@ -93,3 +93,11 @@ table th
     border-bottom: 1px solid #aaa;
     padding-bottom: 5px;
 }
+table tr:nth-child(2)>td 
+{
+    padding-top: 20px,
+}
+table th+th, td+td
+{
+    padding-left: 10px;
+}

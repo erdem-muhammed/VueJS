@@ -40,7 +40,7 @@ const users =
         id: 6,
         name: "Jena",
         surname: "Fischer",
-		alter: 21
+		age: 21
     },
     {
         id: 7,
