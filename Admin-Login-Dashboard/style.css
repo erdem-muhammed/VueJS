@@ -105,3 +105,8 @@ table th:nth-child(2), td:nth-child(2)
     border-right: 1px solid #aaa;
     border-left: 1px solid #aaa;
 }
+#logOut
+{
+    color: var(--text);
+    text-decoration: none;
+}
