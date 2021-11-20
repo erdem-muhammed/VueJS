@@ -32,16 +32,23 @@ body
 }
 #app
 {
-    width: 450px;
-    height: 90%;
+    width: 500px;
+    height: 95%;
     background-color: white;
     border-radius: 8px;
     box-shadow: 1px 0px 5px 0px rgba(0,0,0,0.09);
-    padding: 5%;
+    padding: 70px 50px;
 }
-#app input
+.inputBox
+{
+    display: flex;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 8px;
+}
+.inputBox input
 {
     border: none;
-    border-bottom: 1px solid #aaa;
+    outline: none;
     width: 100%;
+    margin-left: 10px;
 }
